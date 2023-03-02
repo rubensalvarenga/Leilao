@@ -1,0 +1,145 @@
+
+<div class="grupo-artigo ">
+
+  <div class="container-fluid">
+
+      <div class="row">
+          <article id="imoveis" class="borda-cor-especial imoveis-card" >
+
+
+            <div class="carrossel">
+                <owl-carousel-o [options]="customOptions">
+
+                  <ng-container *ngFor="let slide of slides1">
+                    <ng-template carouselSlide [{id}]="slide.id">
+                      <img class="card-posicao-imagem"  [src]="slide.img" >
+                    </ng-template>
+                  </ng-container>
+
+                  </owl-carousel-o>
+            </div>
+
+            <div class="figuras-absolutas">
+                  <figcaption>R$ 377.000,00</figcaption>
+                  <div>
+                    <img class="card-favoritar" src="../../../assets/img/icon-favorito-desabilitado.png">
+                  </div>
+                  <div >
+                    <img class="card-view" src="../../../assets/img/icon-view.png">
+                    <p class="card-view-texto">832</p>
+                  </div>
+                  <div >
+                    <img class="card-view1" src="../../../assets/img/icon-lance1.png">
+                    <p class="card-view-texto1">45</p>
+                  </div>
+            </div>
+
+            <div class="card-texto">
+
+                      <h5 class="card-titulo">Studio</h5>
+
+                      <p class="card-text">O imóvel possui uma construção assobradada com dupla finalidade,
+                        onde o térreo está atualmente sendo utilizado como um comércio</p>
+
+                      <div class="d-flex">
+                                  <div class="container">
+                                      <div class="row icones-card" >
+
+                                        <div class="icones-espaco">
+                                            <img class="icones" src="../../../assets/img/icon-cama.png">
+                                            <p class="icones-fonte">4 quartos</p>
+                                        </div>
+
+                                        <div class="icones-espaco">
+                                          <img class="icones" src="../../../assets/img/icon-vaga.png">
+                                          <p class="icones-fonte">2 vagas</p>
+                                        </div>
+
+                                        <div class="icones-espaco">
+                                          <img class="icones" src="../../../assets/img/icon-chuveiro.png">
+                                          <p class="icones-fonte">3 banheiros</p>
+                                        </div>
+
+                                        <div class="icones-espaco">
+                                          <img class="icones" src="../../../assets/img/icon-cozinhas.png">
+                                          <p class="icones-fonte">1 cozinha</p>
+                                        </div>
+
+                                        <div class="icones-espaco">
+                                            <img class="icones" src="../../../assets/img/icon-piscina.png">
+                                            <p class="icones-fonte">piscina</p>
+                                        </div>
+
+                                        <div class="icones-espaco">
+                                            <img class="icones" src="../../../assets/img/icon-churrasqueira.png">
+                                            <p class="icones-fonte">churrasqueira</p>
+                                        </div>
+
+                                      </div>
+                                  </div>
+                                  <div class="card-descricao">
+                                          <div>
+                                              <img class="icones-area " src="../../../assets/img/icon-area.png">
+                                          </div>
+                                          <div>
+                                          <p class="icones-fonte-area card-descricao-texto">Área construida 180 m2</p>
+
+                                          <p class="icones-fonte-area card-descricao-texto">Área do terreno 290 m2</p>
+                                          </div>
+                                  </div>
+                      </div>
+
+                        <p></p>
+
+                      <div class="d-flex">
+
+                        <div class="container lance-judicial">
+                            <h5 class="judicial">Judicial</h5>
+                            <p>3 PRAÇAS</p>
+                        </div>
+
+                        <div class="container lance-aberto">
+                            <h5 class="aberto">ABERTO PARA LANCES</h5>
+                            <p>1ª Praça: 24/02/2023 às 11:00 - R$ 171.514,40</p>
+                            <p>2ª Praça: 17/03/2023 às 11:00 - R$ 85.757,21</p>
+                        </div>
+
+                      </div>
+
+            </div>
+
+            <div class="rodape">
+                  <div>
+                      <img class="icones" src="../../../assets/img/icon-localizacao.png">
+                  </div>
+                  <div class="icones-fonte-area">
+                      <p >São Paulo  SP</p>
+                  </div>
+                  <div class="push">
+                        <a href="#"><img class="icon-lance" src="../../../assets/img/icon-lance.png"></a>
+                  </div>
+                  <div>
+                        <a href="#"><img class="icon-card" src="../../../assets/img/icon-compartilhar.png"></a>
+                  </div>
+            </div>
+
+          </article>
+      </div>
+
+        <div class="container pagina">
+            <pagination
+                  [totalItems]="totalItems" [(ngModel)]="currentPage">
+            </pagination>
+        </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+

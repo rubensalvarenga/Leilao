@@ -1,0 +1,370 @@
+
+
+
+.grupo-artigo{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.imoveis-card{
+  align-items: center;
+  border-style: solid;
+  border-color: rgb(236, 231, 231);
+  border-width: 0.1rem;
+  border-radius: 10px;
+  width: 48.5%;
+  margin: 0.5em;
+
+}
+
+
+article{
+
+    padding-top: 10px;
+}
+.card-texto{
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-posicao-imagem {
+  object-fit: cover;
+  object-position: 0 100%;
+  border-radius: 10px;
+  height: 300px;
+  padding: 3px;
+
+}
+
+#imoveis figcaption {
+  position: absolute ;
+  display: block;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  background-color: rgb(183, 16, 239);
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 7px;
+  width: 38%;
+  height: 50px;
+  z-index:1;
+}
+
+.card-favoritar{
+  position: absolute;
+  top: 270px;
+  right: 25px;
+  width: 30px;
+
+}
+
+.card-view{
+  position:absolute;
+  top: 280px;
+  right: 135px;
+}
+
+.card-view-texto{
+  position:absolute;
+  top: 277px;
+  right: 110px;
+  color:#fff;
+  font-size: 0.8rem;
+}
+
+.card-view1{
+  position:absolute;
+  top: 280px;
+  right: 85px;
+  width: 16px;
+}
+
+.card-view-texto1{
+  position:absolute;
+  top: 277px;
+  right: 70px;
+  color:#fff;
+  font-size: 0.8rem;
+}
+
+.icon-lance{
+
+
+  width: 45px;
+}
+
+.icon-card{
+  width: 35px;
+}
+
+.rodape{
+  background-color: rgb(237, 237, 238);
+  border-top: 1px solid darkgrey;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.push{
+
+  margin-left: auto;
+
+}
+
+.icones-espaco{
+  width: 300px;
+}
+
+.icones{
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.icones-area{
+  width: 70px;
+
+}
+
+.icones-card{
+  width: 270px;
+  height: 35px;
+}
+
+.icones-espaco{
+  width: 85px;
+  height: 55px;
+  text-align: center;
+}
+
+.icones-fonte{
+  font-size: .6rem;
+
+}
+.icones-planta{
+  max-width: 200px;
+}
+.icones-planta-icon{
+  width: 30px;
+}
+
+.icones-fonte-area{
+  flex-direction: column;
+  align-self: center;
+  font-size: 0.8rem;
+  text-decoration: double;
+  line-height: 15px;
+
+}
+
+.mapa{
+  margin-left: 40px;
+}
+
+.mapa-texto{
+  text-align: left;
+  width: 120px;
+  padding-top: 10px;
+
+}
+/* CARD ------------------- FIM */
+
+
+.logo_texto{
+  font-family: 'Raleway', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.lance-aberto{
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 78%;
+  line-height: 0.3rem;
+  font-size: 0.8rem;
+}
+
+
+.lance-judicial{
+  width: 28%;
+  line-height: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.aberto{
+  font-size: 0.9rem;
+  background-color: rgb(128, 120, 120);
+  color:white;
+  padding-left: 5px;
+
+}
+
+.judicial{
+  font-size: 0.9rem;
+  background-color: #fff;
+  color:forestgreen;
+}
+
+/** PESQUISA ------------------------------ */
+
+.pesquisa{
+  width: 230px;
+  height: 100%;
+  padding-top: 4px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.pesquisa-selecao{
+  padding-bottom: 10px;
+}
+
+.pesquisa-check{
+  padding-left: 25px;
+
+}
+
+.form-check-input:checked{
+  background-color: rgb(183, 16, 239);
+}
+
+#customRange3::-webkit-slider-thumb{
+
+  background: rgb(183, 16, 239);
+}
+
+.pesquisar-botao button{
+  margin-top: 10px;
+  background-color: rgb(183, 16, 239);
+  border-color: #fff;
+}
+
+
+.card-area{
+
+  margin-left: 70px;
+  max-width: 280px;
+}
+
+.footer-lance{
+  height: 30px;
+  margin-top: 0;
+  padding: 0;
+
+}
+
+.card-descricao{
+  padding-top: 15px;
+  display: flex;
+  height: 120px;
+}
+
+.card-descricao-texto{
+flex-direction: row;
+align-items: stretch;
+width: 150px;
+line-height : 0.5rem;
+padding-top: 12px;
+
+}
+
+
+.desconto {
+  background: rgb(255, 42, 0);
+  z-index: 3;
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  width: 70px;
+  height: 30px;
+  border-radius: 0 15px 15px 0;
+  line-height: 30px;
+  font-style: italic;
+  left: 2px;
+  top: 2px;
+}
+
+
+
+
+
+.desconto::after {
+  border-top: 6px solid #c80;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-left: 8px solid transparent;
+  border-right: 0px solid transparent;
+}
+
+.pagina{
+  width: 500px;
+  justify-content: center;
+}
+
+/** botao de navegação owl-carousel **/
+.owl-prev, .owl-next{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: none !important;
+}
+
+/* crio os pseudo-elementos */
+.owl-prev::before, .owl-next::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 50% !important;
+  line-height: 50px;
+}
+
+/* hover para mudar de cor */
+.owl-prev:hover::before, .owl-next:hover::before{
+  background: aqua;
+}
+
+/* crio as setas e centralizo */
+.owl-prev::after, .owl-next::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transform: rotate(135deg);
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  top: 50%; left: 50%;
+  margin-top: -9px;
+  margin-left: -4px;
+}
+
+/* ajusto a seta next */
+.owl-next::after {
+  transform: rotate(-45deg);
+  margin-left: -14px;
+}
+
+.card-posicao-imagem:hover{
+    transform: scale3d(1.1,1.1,1);
+}

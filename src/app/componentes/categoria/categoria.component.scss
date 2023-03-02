@@ -1,0 +1,279 @@
+/* Rolagem horizontal */
+
+.cabecalho{
+  width: 100%;
+  background-color: white;
+  font-size: 1rem;
+  color: rgb(102, 29, 198);
+  text-align: center;
+  padding: .0rem 0;
+}
+
+.menu{
+  width: 80%;
+
+  background-color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+
+}
+
+
+
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+
+
+
+}
+
+.menu li{
+  display: inline;
+  padding-right: 6px;
+  max-width: 72px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.menu a{
+  color: rgb(84, 78, 78);
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+
+.gallery-row{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  display:-webkit-flex;
+
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-flow:row nowrap;
+          flex-flow:row nowrap;
+}
+
+.gallery-row-scroll{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  display:-webkit-flex;
+  /* overflow-x:scroll; */
+  -webkit-overflow-scrolling: touch;
+  -ms-flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row nowrap;
+
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+.gallery-row-scroll > *{
+  margin: 0 0.1em;
+  flex:0 0 auto;
+}
+
+.gallery-row-scroll > :first-child{
+  margin-left: 0;
+}
+
+.gallery-row-scroll > :last-child{
+  margin-right: 0;
+}
+
+.gallery-row img{
+  display:block;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.gallery-row .arrow.right{
+  right:0;
+}
+
+.gallery-row.large img{
+  height:200px;
+  width:auto;
+
+}
+
+.gallery-row.small img{
+  height:150px;
+  width:auto;
+}
+
+.arrow {
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  height: 30px;
+
+
+}
+
+.fundo_seta{
+
+  color: #5f13b6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5em;
+
+}
+
+
+
+
+.icon-menu{
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu li:hover{
+  color:rgb(102, 29, 198);
+}
+
+.nav-categoria{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Rolagem horizontal --- FIM */
+
+.filtro{
+  padding-top: 12px;
+  text-align: center;
+}
+
+
+/* Pesquisa */
+
+.logo_texto{
+  font-family: 'Raleway', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+.lances{
+  line-height: 3px;
+  font-size: 0.8rem;
+}
+
+.lances h5{
+  width: 270px;
+  font-size: 0.9rem;
+  background-color: rgb(128, 120, 120);
+  color:white;
+}
+.judicial{
+  background-color: #fff;
+  color:forestgreen;
+}
+
+/** PESQUISA ------------------------------ */
+
+.pesquisa{
+  width: 230px;
+  height: 100%;
+  padding-top: 4px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.pesquisa-selecao{
+  padding-bottom: 10px;
+}
+
+.pesquisa-check{
+  padding-left: 25px;
+
+}
+
+.form-check-input:checked{
+  background-color: rgb(183, 16, 239);
+}
+
+#customRange3::-webkit-slider-thumb{
+
+  background: rgb(183, 16, 239);
+}
+
+.pesquisar-botao button{
+  margin-top: 10px;
+  background-color: rgb(183, 16, 239);
+  border-color: #fff;
+}
+
+
+.card-area{
+
+  margin-left: 70px;
+  max-width: 280px;
+}
+
+.footer-lance{
+  height: 30px;
+  margin-top: 0;
+  padding: 0;
+
+}
+
+.coluna1{
+  margin-left: 5px;
+}
+
+.ranger{
+
+  width: 300px;
+  margin-top: 30px;
+  align-self: center;
+
+}
+
+.ranger-texto {
+  width: 300px;
+  align-self: center;
+
+}
+
+.ranger p{
+
+  width: 200px;
+
+}
+
+.ranger input{
+  align-self: center;
+
+  width: 200px;
+  border-style: none;
+  font-style: italic;
+}
+
+#scroller li:hover{
+transform: scale3d(1.1,1.1,1);
+  }

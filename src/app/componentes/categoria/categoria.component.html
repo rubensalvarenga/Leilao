@@ -1,0 +1,233 @@
+<!-- Menu categoria -->
+<div container-fluid bg-light>
+  <div class="row justify-content-center " >
+
+  <div class="cabecalho"><span>Navegue pelas categorias</span></div>
+  <div id="widthControlled" class="gallery-row small menu">
+    <div id="leftArrow" class="arrow left">
+      <div class="fundo_seta" >
+        <p class="seta" (click)="getData()" > < </p>
+      </div>
+    </div>
+    <ul id="scroller" class="gallery-row-scroll" >
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-imoveis.png">
+        <a href="#">Imóveis</a>
+      </li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-carro.png">
+        <a href="#">Carros & Motos</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-caminhoes-onibus.png">
+        <a href="#">Caminhão & Ônibus</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-navegacao.png">
+        <a href="#">Embarcações & Aeronaves</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-maquinas-pesadas.png">
+        <a href="#">Máquinas Pesadas & Agricola</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-industria.png">
+        <a href="#">Industrial, Máquinas & Equipamentos</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-movimentacoes.png">
+        <a href="#">Movimentação & Transporte</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-computadores.png">
+        <a href="#">Tecnologia</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-eletrodomesticos.png">
+        <a href="#">Eletrodomésticos</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-construcao.png">
+        <a href="#">Materiais para Construção Civil</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-cozinha.png">
+        <a href="#">Cozinha & Restaurante</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-sofa.png">
+        <a href="#">Móveis & Decoração</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-alimento-e-bebidas.png">
+        <a href="#">Alimentos & Bebidas</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-oportunidades.png">
+        <a href="#">Oportunidades</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-joias.png">
+        <a href="#">Bolsas, Canetas, Jóias & Relógios</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-arte.png">
+        <a href="#">Artes, Decoração & Colecionismo</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-animal.png">
+        <a href="#">Animais</a></li>
+      <li>
+        <img class="icon-menu" src="/assets/img/icon-sucatas.png">
+        <a href="#">Sucatas, Materiais & Resíduos</a></li>
+    </ul>
+    <div id="rightArrow" class="arrow right">
+      <div class="fundo_seta">
+        <p class="seta" (click)="getData()" > > </p>
+      </div>
+    </div>
+    <div class="filtro">
+      <a (click)="openModal(template)"><img class="icon-menu" src="../../../assets/img/icon-filtro.png"></a>
+      <a (click)="openModal(template)">Filtro</a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- FIM Menu Categoria-->
+
+<!-- template de pesquisa -->
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Escolha seu imóvel</h4>
+    <button type="button" class="close btn-close pull-right" aria-label="Close" >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+
+  <div class="ranger">
+            <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options">
+
+            </ngx-slider>
+            <div class="d-flex ranger-texto">
+                <p>Valor Inicial: <input  [(ngModel)]="minValue"></p>
+                <p>Valor Final: <input [(ngModel)]="maxValue"></p>
+            </div>
+    </div>
+
+
+    <div class="card-body">
+      <form>
+        <div class="pesquisa-localizacao"></div>
+        localização
+        <div class="form-floating pesquisa-selecao">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+            <option value="1">Acre</option>
+            <option value="2">Alagoas</option>
+            <option value="3">Amapá</option>
+            <option value="4">Amazonas</option>
+            <option value="5">Bahia</option>
+            <option value="6">Ceará</option>
+            <option value="7">Distrito Federal</option>
+            <option value="8">Espírito Santo</option>
+            <option value="9">Goiás</option>
+            <option value="10">Maranhão</option>
+            <option value="12">Mato Grosso</option>
+            <option value="13">Mato Grosso do Sul</option>
+            <option value="14">Minas Gerais</option>
+            <option value="15">Pará</option>
+            <option value="16">Paraíba</option>
+            <option value="17">Paraná</option>
+            <option value="18">Pernambuco</option>
+            <option value="19">Piauí</option>
+            <option value="20">Rio de Janeiro</option>
+            <option value="21">Rio Grande do Norte</option>
+            <option value="22">Rio Grande do Sul</option>
+            <option value="23">Rondônia</option>
+            <option value="24">Roraima</option>
+            <option value="25">Santa Catarina</option>
+            <option value="26">São Paulo</option>
+            <option value="27">Sergipe</option>
+            <option value="28">Tocantins</option>
+          </select>
+          <label for="floatingSelect">estado</label>
+        </div>
+
+        <div class="form-floating pesquisa-selecao">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+
+            <option value="1">Americana</option>
+            <option value="2">Piracaia</option>
+            <option value="3">Mariporã</option>
+            <option value="1">Santos</option>
+            <option value="2">Joanopolis</option>
+            <option value="3">Diamantina</option>
+            <option value="1">Campinas</option>
+            <option value="2">Piracicaba</option>
+            <option value="3">Cubatão</option>
+          </select>
+          <label for="floatingSelect">cidade</label>
+        </div>
+
+
+  tipo de imóvel
+
+    <div class="row coluna1">
+
+        <div class="form-check pesquisa-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+        <label class="form-check-label" for="flexCheckDefault">
+        terreno industrial
+        </label>
+        </div>
+
+        <div class="form-check pesquisa-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+  terreno residencial
+  </label>
+          </div>
+          <div class="form-check pesquisa-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+          <label class="form-check-label" for="flexCheckChecked">
+          terreno rural
+          </label>
+          </div>
+
+        <div class="form-check pesquisa-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+            casa
+            </label>
+        </div>
+
+
+  <div class="form-check pesquisa-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+  Studio
+  </label>
+  </div>
+  <div class="form-check pesquisa-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+  apartamento
+  </label>
+  </div>
+  <div class="form-check pesquisa-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+  galpão
+  </label>
+  </div>
+  <div class="form-check pesquisa-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+  prédio
+  </label>
+  </div>
+  </div>
+
+
+
+
+
+
+        </form>
+        </div>
+
+
+
+
+
+</ng-template>
+
+
