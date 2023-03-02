@@ -21,12 +21,12 @@ export class ArtigoComponent {
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
-    navText: ['<', '>'],
+    navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
     responsive: {
       0: {
         items: 1
@@ -42,7 +42,7 @@ export class ArtigoComponent {
       }
     },
     nav: true,
-    center:true
+
   }
 
     slides = [

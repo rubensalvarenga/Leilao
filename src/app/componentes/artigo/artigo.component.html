@@ -6,10 +6,27 @@
       <div class="row">
           <article id="imoveis" class="borda-cor-especial imoveis-card" >
 
-            <div class="carrossel">
-                <owl-carousel-o [options]="customOptions">
+            <div class="figuras-absolutas">
+              <figcaption>R$ 377.000,00</figcaption>
+              <div>
+              <div class="desconto">15%</div>
+                <img class="card-favoritar" src="../../../assets/img/icon-favorito-habilitado.png">
+              </div>
+              <div >
+                <img class="card-view" src="../../../assets/img/icon-view.png">
+                <p class="card-view-texto">832</p>
+              </div>
+              <div >
+                <img class="card-view1" src="../../../assets/img/icon-lance1.png">
+                <p class="card-view-texto1">45</p>
+              </div>
+            </div>
 
-                  <ng-container *ngFor="let slide of slides1">
+
+            <div >
+                <owl-carousel-o   [options]="customOptions">
+
+                  <ng-container class="banner" *ngFor="let slide of slides1">
                     <ng-template carouselSlide [{id}]="slide.id">
                       <img class="card-posicao-imagem"  [src]="slide.img" >
                     </ng-template>
@@ -18,27 +35,14 @@
                   </owl-carousel-o>
             </div>
 
-            <div class="figuras-absolutas">
-                  <figcaption>R$ 377.000,00</figcaption>
-                  <div>
-                    <img class="card-favoritar" src="../../../assets/img/icon-favorito-desabilitado.png">
-                  </div>
-                  <div >
-                    <img class="card-view" src="../../../assets/img/icon-view.png">
-                    <p class="card-view-texto">832</p>
-                  </div>
-                  <div >
-                    <img class="card-view1" src="../../../assets/img/icon-lance1.png">
-                    <p class="card-view-texto1">45</p>
-                  </div>
-            </div>
+
 
             <div class="card-texto">
 
                       <h5 class="card-titulo">Studio</h5>
 
                       <p class="card-text">O imóvel possui uma construção assobradada com dupla finalidade,
-                        onde o térreo está atualmente sendo utilizado como um comércio</p>
+                        onde o térreo está atualmente  sendo utilizado como um comércio</p>
 
                       <div class="d-flex">
                                   <div class="container">
