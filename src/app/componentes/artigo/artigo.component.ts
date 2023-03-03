@@ -45,6 +45,32 @@ export class ArtigoComponent {
 
   }
 
+  optionCard: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 1
+      },
+      740: {
+        items: 1
+      },
+      940: {
+        items: 3
+      }
+    },
+    nav: true,
+
+  }
+
     slides = [
       {id: 1, img: "../../../assets/img/imovel-img1.jpg"},
       {id: 2, img: "../../../assets/img/imovel-img2.jpg"},
