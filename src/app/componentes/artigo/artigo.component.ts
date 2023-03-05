@@ -67,7 +67,7 @@ export class ArtigoComponent {
         items: 3
       }
     },
-    nav: true,
+    nav: false,
 
   }
 
@@ -83,25 +83,34 @@ export class ArtigoComponent {
 
 
     slides1 = [
-      {id: 1, img: "../../../assets/img/imovel-img8.jpg"},
+      {id: 1, img: "../../../assets/img/imovel-img15.jpg"},
       {id: 2, img: "../../../assets/img/imovel-img9.jpeg"},
       {id: 3, img: "../../../assets/img/imovel-img11.jpg"},
       {id: 4, img: "../../../assets/img/imovel-img12.jpg"},
       {id: 5, img: "../../../assets/img/imovel-img13.jpg"},
       {id: 6, img: "../../../assets/img/imovel-img14.jpg"},
-      {id: 6, img: "../../../assets/img/imovel-img15.jpg"}
+      {id: 6, img: "../../../assets/img/imovel-img8.jpg"}
     ];
 
     slides2 = [
       {id: 1, img: "../../../assets/img/imovel-img17.jpg"},
       {id: 2, img: "../../../assets/img/imovel-img18.jpeg"},
-      {id: 3, img: "../../../assets/img/imovel-img19.jpg"},
+      {id: 3, img: "../../../assets/img/imovel-img17.jpg"},
       {id: 4, img: "../../../assets/img/imovel-img20.jpg"},
       {id: 5, img: "../../../assets/img/imovel-img21.jpg"},
       {id: 6, img: "../../../assets/img/imovel-img22.jpeg"},
       {id: 6, img: "../../../assets/img/imovel-img11.jpg"}
     ];
 
+    slides3 = [
+      {id: 1, img: "../../../assets/img/imovel-img11.jpg"},
+      {id: 2, img: "../../../assets/img/imovel-img18.jpeg"},
+      {id: 3, img: "../../../assets/img/imovel-img17.jpg"},
+      {id: 4, img: "../../../assets/img/imovel-img20.jpg"},
+      {id: 5, img: "../../../assets/img/imovel-img21.jpg"},
+      {id: 6, img: "../../../assets/img/imovel-img22.jpeg"},
+      {id: 6, img: "../../../assets/img/imovel-img11.jpg"}
+    ];
 
 
   }

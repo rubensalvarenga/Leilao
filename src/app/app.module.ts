@@ -23,6 +23,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { PopoverModule } from 'ngx-bootstrap/popover';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ArtigonewComponent } from './componentes/artigonew/artigonew.component';
+import { CategorianewComponent } from './componentes/categorianew/categorianew.component';
 
 
 
@@ -38,6 +40,8 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     CategoriaComponent,
     PesquisaComponent,
     RodapeComponent,
+    ArtigonewComponent,
+    CategorianewComponent,
 
 
   ],

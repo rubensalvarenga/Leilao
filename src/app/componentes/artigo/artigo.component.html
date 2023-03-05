@@ -1,13 +1,14 @@
 
-<div class="grupo-artigo align-content-center">
+<div class="grupo-artigo align-content-center  bg-color">
 
   <div class="container-fluid">
 
-      <div class="row ">
+      <div class="row">
 
-<owl-carousel-o [options]="optionCard">
-      <ng-template carouselSlide>
-                <article id="imoveis" class="borda-cor-especial imoveis-card centro" >
+<owl-carousel-o [options]="optionCard" >
+
+      <ng-template carouselSlide class="efeito">
+                <article id="imoveis" class="borda-cor-especial imoveis-card" >
 
                   <div class="figuras-absolutas">
                     <figcaption>R$ 377.000,00</figcaption>
@@ -26,10 +27,10 @@
                   </div>
 
 
-                  <div >
+                  <div class="teste">
                       <owl-carousel-o   [options]="customOptions">
 
-                        <ng-container *ngFor="let slide of slides1">
+                        <ng-container *ngFor="let slide of slides3">
                           <ng-template carouselSlide [{id}]="slide.id">
                             <img class="card-posicao-imagem"  [src]="slide.img" >
                           </ng-template>
@@ -38,7 +39,13 @@
                         </owl-carousel-o>
                   </div>
 
-
+                  <div class="cart-item">
+                    <ul>
+                      <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
+                      <li><a href=""><i class="fa fa-heart"></i></a></li>
+                      <li><a href=""><i class="fa fa-search"></i></a></li>
+                    </ul>
+                  </div>
 
                   <div class="card-texto">
 
@@ -155,7 +162,7 @@
                     <div >
                         <owl-carousel-o   [options]="customOptions">
 
-                          <ng-container *ngFor="let slide of slides1">
+                          <ng-container *ngFor="let slide of slides2">
                             <ng-template carouselSlide [{id}]="slide.id">
                               <img class="card-posicao-imagem"  [src]="slide.img" >
                             </ng-template>

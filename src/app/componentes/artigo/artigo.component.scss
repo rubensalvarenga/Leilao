@@ -29,6 +29,7 @@
   border-width: 0.1rem;
   border-radius: 10px;
   width: 98%;
+  height: 100%;
   margin: 0.5em;
 
 
@@ -334,14 +335,78 @@ padding-top: 12px;
   justify-content: center;
 }
 
+/** NAV CARD ------------------------------ */
+.teste{
+  position: relative;
 
-.imoveis-card .owl-prev, .imoveis-card .owl-next{
+}
+.teste .owl-prev, .teste .owl-next{
   position: absolute;
   background: rgba(255,255,255, 0.781)!important;
   color: #222!important;
-  width: 120px!important;
-  height: 120px!important;
+  max-width: 200px!important;
+  max-height: 200px!important;
   border-radius: 50%!important;
+  top: 100px!important;
+  right: 135px!important;
+  z-index: 3;
 }
+
+/** HOVER ------------------------------ */
+.cart-line {
+  height: 2px;
+  background: #f1f1f1;
+}
+
+.cart-item {
+  text-align: center;
+  line-height: 45px;
+  background-color: #111;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  position: relative;
+  top: -30px;
+}
+
+.cart-item ul {
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item ul li {
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+}
+
+.cart-item ul li::after {
+  content: "";
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, .15);
+  position: absolute;
+  left: -2px;
+  top: 10px;
+}
+
+.cart-item ul li:first-child:after {
+  display: none;
+}
+
+.cart-item ul li a {
+  padding: 0 18px;
+  color: #ccc;
+}
+
+.cart-item ul li a:hover {
+  color: #fa0;
+}
+
+
+.cart-item:hover, efeito:hover {
+  opacity: 1;
+  top: 0;
+}
+
 
 
