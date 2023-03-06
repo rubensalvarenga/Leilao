@@ -1,15 +1,29 @@
-<div class="carousel-wrapper">
+<div class="carousel-wrapper " >
 
-  <div class="carousel">
-  <owl-carousel-o [options]="customOptionsnew"  >
+  <div class="carousel ">
 
-    <ng-container *ngFor="let slidenew of categorias">
-      <ng-template carouselSlide [{idnew}]="slidenew.idnew" >
-        <img class="categoria-item" [src]="slidenew.imgnew" >
-      </ng-template>
-    </ng-container>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
 
-    </owl-carousel-o>
+            <div class="carousel-item active" *ngFor="let slidenew of categorias" >
+              <img class="" [src]="slidenew.imgnew" >
+            </div>
+      </div>
+
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
 </div>
 </div>
 
