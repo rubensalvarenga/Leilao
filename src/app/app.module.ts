@@ -39,7 +39,6 @@ import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [
-
     AppComponent,
     ArtigoComponent,
     CabecalhoComponent,
@@ -52,11 +51,6 @@ import { NgModule } from '@angular/core';
     CategorianewComponent,
     HelloComponent,
     NgxvideoComponent,
-
-
-
-
-
   ],
   imports: [
     BrowserModule,

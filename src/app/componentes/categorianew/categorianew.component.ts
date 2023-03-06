@@ -7,20 +7,24 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./categorianew.component.scss']
 })
 export class CategorianewComponent {
-  customOptionsnew: OwlOptions = {
 
-    center: true,
+  customOptionsnew: OwlOptions = {
     loop: true,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
+    margin: 10,
     dots: false,
-    navSpeed: 300,
-    navText: [ '<i class="fa-chevron-left"></i>', '<i class="fa-chevron-right></i>"'],
-    autoplay: false,
-    items:7,
-    autoWidth:true,
-    autoHeight:true,
+    autoWidth: true,
+    autoHeight: true,
+    navSpeed: 800,
+    navText: ['', ''],
+    nav: true,
+    items: 7,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 8000,
+    autoplaySpeed: 5000,
 
      responsive: {
       0: {
@@ -36,7 +40,7 @@ export class CategorianewComponent {
         items: 7
       }
     },
-    nav: true
+
   }
 
     categorias = [
