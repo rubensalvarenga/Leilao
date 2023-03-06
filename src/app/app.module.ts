@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RouterModule, Routes } from '@angular/router';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,16 +16,21 @@ import { CarrosselComponent } from './componentes/carrossel/carrossel.component'
 import { CategoriaComponent } from './componentes/categoria/categoria.component';
 import { PesquisaComponent } from './componentes/pesquisa/pesquisa.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
-
-
+import { ArtigonewComponent } from './componentes/artigonew/artigonew.component';
+import { CategorianewComponent } from './componentes/categorianew/categorianew.component';
+import { VideoComponent } from './componentes/video/video.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { PopoverModule } from 'ngx-bootstrap/popover';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
-import { ArtigonewComponent } from './componentes/artigonew/artigonew.component';
-import { CategorianewComponent } from './componentes/categorianew/categorianew.component';
+
+
+import { HelloComponent } from './hello.component';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+
+import { NgModule } from '@angular/core';
 
 
 
@@ -42,6 +48,10 @@ import { CategorianewComponent } from './componentes/categorianew/categorianew.c
     RodapeComponent,
     ArtigonewComponent,
     CategorianewComponent,
+    HelloComponent,
+    VideoComponent,
+
+
 
 
   ],
@@ -57,7 +67,11 @@ import { CategorianewComponent } from './componentes/categorianew/categorianew.c
     BrowserModule,
     CarouselModule,
     BrowserAnimationsModule,
-    PaginationModule
+    PaginationModule,
+    NgxYoutubePlayerModule.forRoot(),
+
+
+
 
 
   ],
@@ -65,3 +79,4 @@ import { CategorianewComponent } from './componentes/categorianew/categorianew.c
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);
