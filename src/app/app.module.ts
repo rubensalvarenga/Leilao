@@ -18,7 +18,8 @@ import { PesquisaComponent } from './componentes/pesquisa/pesquisa.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { ArtigonewComponent } from './componentes/artigonew/artigonew.component';
 import { CategorianewComponent } from './componentes/categorianew/categorianew.component';
-import { VideoComponent } from './componentes/video/video.component';
+import { NgxvideoComponent } from './componentes/ngxvideo/ngxvideo.component';
+
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ModalModule } from 'ngx-bootstrap/modal';
@@ -31,6 +32,7 @@ import { HelloComponent } from './hello.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 import { NgModule } from '@angular/core';
+
 
 
 
@@ -49,7 +51,8 @@ import { NgModule } from '@angular/core';
     ArtigonewComponent,
     CategorianewComponent,
     HelloComponent,
-    VideoComponent,
+    NgxvideoComponent,
+
 
 
 

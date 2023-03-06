@@ -32,8 +32,9 @@
                       <div class="cart-line"></div>
                       <div class="cart-item">
                           <ul>
-                            <li><a href=""><i class="fa fa-share-alt"></i></a></li>
                             <li><a href=""><img class="icon-tamanho" src="../../../assets/img/icon-leilao-branco.png"></a></li>
+                            <li><a (click)="openModal(template)"><i class="fa fa-video-camera"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-alt"></i></a></li>
                             <li><a href=""><i class="fa fa-heart"></i></a></li>
                             <li><a href=""><i class="fa fa-search"></i></a></li>
                           </ul>
@@ -137,11 +138,12 @@
                     <div class="cart-line"></div>
                     <div class="cart-item">
                         <ul>
-                          <li><a href=""><i class="fa fa-share-alt"></i></a></li>
                           <li><a href=""><img class="icon-tamanho" src="../../../assets/img/icon-leilao-branco.png"></a></li>
+                          <li><a (click)="openModal(template)"><i class="fa fa-video-camera"></i></a></li>
+                          <li><a href=""><i class="fa fa-share-alt"></i></a></li>
                           <li><a href=""><i class="fa fa-heart"></i></a></li>
                           <li><a href=""><i class="fa fa-search"></i></a></li>
-                        </ul>
+                    </ul>
                     </div>
                 </div>
                 <div class="content">
@@ -189,6 +191,7 @@
                                   <div class="row icones-card divide">
                                           <div>
                                             <img class="icones-area" src="../../../assets/img/icon-area.png">
+
                                           </div>
                                           <div>
                                             <p class="">Área construida 480 m<sup>2</sup></p>
@@ -218,4 +221,23 @@
   </div>
 
 </section>
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Tour do imóvel</h4>
+    <button type="button" class="close btn-close pull-right" aria-label="Close" >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+
+<div class="formulario-login">
+
+  <app-ngxvideo> </app-ngxvideo>
+
+
+</div>
+
+
+
+
+</ng-template>
 

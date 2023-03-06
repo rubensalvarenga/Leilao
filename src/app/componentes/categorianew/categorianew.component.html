@@ -1,10 +1,10 @@
-<div class="container-fluid">
+<div class="container-fluid categoria">
 
-  <owl-carousel-o [options]="customOptions" >
+  <owl-carousel-o [options]="customOptionsnew"  >
 
-    <ng-container *ngFor="let slide of categorias">
-      <ng-template carouselSlide [{id}]="slide.id">
-        <img class="categoria" [src]="slide.img" >
+    <ng-container *ngFor="let slidenew of categorias">
+      <ng-template carouselSlide [{idnew}]="slidenew.idnew" >
+        <img class="categoria-item" [src]="slidenew.imgnew" >
       </ng-template>
     </ng-container>
 

@@ -7,7 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./categorianew.component.scss']
 })
 export class CategorianewComponent {
-  customOptions: OwlOptions = {
+  customOptionsnew: OwlOptions = {
 
     center: true,
     loop: true,
@@ -15,11 +15,12 @@ export class CategorianewComponent {
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 300,
     navText: [ '<i class="fa-chevron-left"></i>', '<i class="fa-chevron-right></i>"'],
-    autoplay: true,
+    autoplay: false,
     items:7,
     autoWidth:true,
+    autoHeight:true,
 
      responsive: {
       0: {
@@ -39,22 +40,21 @@ export class CategorianewComponent {
   }
 
     categorias = [
-      {id: 1, img: "/assets/img/icon-imoveis.png"},
-      {id: 2, img: "/assets/img/icon-carro.png"},
-      {id: 3, img: "/assets/img/icon-caminhoes-onibus.png"},
-      {id: 4, img: "/assets/img/icon-navegacao.png"},
-      {id: 5, img: "/assets/img/icon-maquinas-pesadas.png"},
-      {id: 6, img: "/assets/img/icon-industria.png"},
-      {id: 6, img: "/assets/img/icon-movimentacoes.png"},
-      {id: 6, img: "/assets/img/icon-computadores.png"},
-      {id: 6, img: "/assets/img/icon-eletrodomesticos.png"},
-      {id: 6, img: "/assets/img/icon-construcao.png"},
-      {id: 5, img: "/assets/img/icon-cozinha.png"},
-      {id: 6, img: "/assets/img/icon-sofa.png"},
-      {id: 6, img: "/assets/img/icon-alimento-e-bebidas.png"},
-      {id: 6, img: "/assets/img/icon-oportunidades.png"},
-      {id: 6, img: "/assets/img/icon-joias.png"},
-      {id: 6, img: "/assets/img/icon-animal.png"},
-      {id: 6, img: "/assets/img/icon-sucatas.png"}
+      {idnew: 11, imgnew: "/assets/img/icon-imoveis.png"},
+      {idnew: 21, imgnew: "/assets/img/icon-carro.png"},
+      {idnew: 31, imgnew: "/assets/img/icon-caminhoes-onibus.png"},
+      {idnew: 41, imgnew: "/assets/img/icon-navegacao.png"},
+      {idnew: 51, imgnew: "/assets/img/icon-maquinas-pesadas.png"},
+      {idnew: 16, imgnew: "/assets/img/icon-industria.png"},
+      {idnew: 26, imgnew: "/assets/img/icon-movimentacoes.png"},
+      {idnew: 36, imgnew: "/assets/img/icon-computadores.png"},
+      {idnew: 46, imgnew: "/assets/img/icon-eletrodomesticos.png"},
+      {idnew: 56, imgnew: "/assets/img/icon-construcao.png"},
+      {idnew: 65, imgnew: "/assets/img/icon-cozinha.png"},
+      {idnew: 86, imgnew: "/assets/img/icon-alimento-e-bebidas.png"},
+      {idnew: 96, imgnew: "/assets/img/icon-oportunidades.png"},
+      {idnew: 116, imgnew: "/assets/img/icon-joias.png"},
+      {idnew: 126, imgnew: "/assets/img/icon-animal.png"},
+      {idnew: 136, imgnew: "/assets/img/icon-sucatas.png"}
     ];
 }
