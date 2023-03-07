@@ -5,6 +5,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { Observable } from 'rxjs/Rx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,8 @@ import { HelloComponent } from './hello.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 import { NgModule } from '@angular/core';
+import { ImovelComponent } from './componentes/imovel/imovel.component';
+import { RelogioComponent } from './componentes/relogio/relogio.component';
 
 
 
@@ -51,6 +54,8 @@ import { NgModule } from '@angular/core';
     CategorianewComponent,
     HelloComponent,
     NgxvideoComponent,
+    ImovelComponent,
+    RelogioComponent,
   ],
   imports: [
     BrowserModule,
