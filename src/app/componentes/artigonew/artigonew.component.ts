@@ -10,6 +10,8 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 export class ArtigonewComponent {
 
+  
+
   url: string = "../../../assets/img/imovel-img1.jpg";
   imageChange(event: any){
       this.url = event.target.src;

@@ -5,7 +5,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { Observable } from 'rxjs/Rx';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
