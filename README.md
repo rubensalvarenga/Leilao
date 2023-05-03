@@ -1,4 +1,6 @@
-# Leilao
+Projeto elaborado para aperfeiçoar e fixar os conhecimentos em html, css, typescript e Angular 
+
+Adicionando vários componentes para dar uma maior experiência na navegação do site.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
